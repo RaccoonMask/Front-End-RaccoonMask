@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p:hover{
+            background-color: plum;
+            color: beige;
+            padding: 10px;
+        }
+        p::first-letter{
+            font-size: 2rem;
+            color: blueviolet;
+        }
+        p::after{
+            content: "🎈"
+        }
+        p::before{
+            content: "-👾";
+        }
+
+        div > p:nth-child(2){
+            background-color: yellow;
+        }
+        input::placeholder{
+            color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h2>Pseudo Clases</h2>
+    CSS-TRICKS - Web Guia
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus excepturi error officia laboriosam perferendis soluta reiciendis. Totam excepturi autem quos, deserunt voluptate explicabo iste minus culpa, nemo animi fuga numquam.</p>
+
+    <div>
+        <input type="text" placeholder="Nombre">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fugiat blanditiis nesciunt facilis magni vero aspernatur repellat pariatur culpa adipisci dolores quis ducimus, delectus unde exercitationem fuga quae beatae molestias!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fugiat blanditiis nesciunt facilis magni vero aspernatur repellat pariatur culpa adipisci dolores quis ducimus, delectus unde exercitationem fuga quae beatae molestias!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fugiat blanditiis nesciunt facilis magni vero aspernatur repellat pariatur culpa adipisci dolores quis ducimus, delectus unde exercitationem fuga quae beatae molestias!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fugiat blanditiis nesciunt facilis magni vero aspernatur repellat pariatur culpa adipisci dolores quis ducimus, delectus unde exercitationem fuga quae beatae molestias!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fugiat blanditiis nesciunt facilis magni vero aspernatur repellat pariatur culpa adipisci dolores quis ducimus, delectus unde exercitationem fuga quae beatae molestias!</p>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus doloribus quae beatae vero, saepe fugiat eos vitae laborum, quos modi accusantium at est deserunt porro laboriosam! Culpa dicta beatae dolor.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, repellendus natus! Fugit consequatur praesentium dolor optio ut dolorum facilis cupiditate provident nam sit, soluta quo esse architecto atque eaque quam.</p>
+        </div>
+    </div>
+</body>
+</html>
