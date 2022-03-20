@@ -6,36 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        p{
-            background-color: red;
-            color: springgreen;
-        }
-
-        section div p{
-            background-color: plum;
-            color: slategray;
-        }
-
-        section p{
-            background-color: aquamarine;
+        div > p{
+            background-color: bisque;
             color: black;
         }
     </style>
 </head>
 <body>
-    <h4>Selectores combinadore</h4>
-    <p>Descendientes -- section p a --</p>
-    <p>Hijo Directo -- div > p --</p>
-    <p>Elemento Adyacente -- div + p --</p>
-    <p>General de Hermanos -- div ~ p --</p>
-    <section>
-        <h2>Hola mundo</h2>
-        <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, iusto hic veritatis velit officia quidem alias deserunt at dolore magnam est! Ullam esse id ab veritatis. Debitis quidem quam consectetur.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quia quod deleniti explicabo fugiat expedita inventore fugit provident at aliquid, facere laudantium molestias quaerat unde quibusdam maiores aliquam porro qui?</p>
-        </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ipsum repellendus ipsa nihil earum aut excepturi minima? Eligendi distinctio laborum optio eaque natus libero deserunt corporis praesentium, voluptate maiores officiis?</p>
-    </section>
+    <h3>Selectores de Hijo Directo Div > p</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque explicabo unde iste in deleniti? Harum culpa nesciunt veritatis, voluptate soluta aperiam, fuga nostrum eveniet iste vero, sequi temporibus porro placeat.</p>
 
+    <section>
+        <div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, eveniet. Unde expedita provident commodi minus nesciunt impedit doloremque excepturi, ipsum amet aliquam quo maiores laborum deleniti obcaecati praesentium voluptatem ex.</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem porro iure, expedita itaque vero illum obcaecati cum officiis consectetur reiciendis quod ut ipsam qui ratione nostrum ab nihil? Aspernatur, omnis.</p>
+        <article>
+            <div>
+                <span>Hola mundo</span>
+                <article>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolorum ad beatae asperiores molestiae harum ullam nesciunt. Aut dolor voluptatem nesciunt est, esse maxime accusantium! Quidem libero fuga consectetur itaque?</p>
+                </article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, autem aliquid facilis expedita officia possimus aliquam praesentium error necessitatibus aut veniam laudantium est dolorem odio, deleniti reprehenderit eveniet quos quas.</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil autem porro eaque expedita iste, ullam labore, commodi in consequuntur neque, accusamus magnam nostrum voluptatum beatae sit enim aliquid eveniet itaque?</p>
+                <div>
+                    <p>lalalala</p>
+                </div>
+            </div>
+        </article>
+    </section>
 </body>
 </html>
