@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            text-align: center;
+            background-color: bisque;
+        }
+        p{
+            background-color: bisque;
+        }
+        p.bloque{
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            margin: 0 auto;
+            margin-top: 40px;
+        }
+        span{
+            background-color: blueviolet;
+            color: wheat;
+            /* margin-right: 30px; */
+        }
+        a{
+            color: antiquewhite;
+            background-color: cadetblue;
+            margin-left: 60px;
+        }
+        .container{
+            width: 100%;
+            background-color: lime;
+            text-align: center;
+        }
+        button{
+            height: 45px;
+            width: 120px;
+            background-color: black;
+            color: white;
+            border: solid green;
+            /* margin-top: 2rem; */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Block</h2>
+        <p>Hola mundo feliz soy un parrafo y soy de bloque como el h2 de arriba :D</p>
+        <p>Se puede manipular el tamaño alto y ancho y se pueden tener margenes</p>
+        <p class="bloque"></p>
+    </div>
+
+    <div>
+        <h2>Inline</h2>
+        <span>Yo soy Inline</span>
+        <a href="">Yo tambien soy Inline</a>
+        <p>El display inline permite ajustar margenes de izquierda y derecha, NO permite modificar alto y ancho de su elemento, NO ocupa el totoal de su contenido solo ocupado el ancho de sus letras o contenido</p>
+    </div>
+
+    <div>
+        <h2>Inlie-block</h2>
+        <p>Este tipo de display ocupado el ancho de su propio contenido no se expande por defecto, pero si permite modificar el ancho y alto, ademas de permitir los margenes, en pocas palabras es lo mejor de block con inline</p>
+        <div class="container">
+            <button>Hola Mundo</button>
+        </div>
+    </div>
+</body>
+</html>
