@@ -5,8 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        span{
+            font-size: 2rem;
+            color: blueviolet;
+        }
+        p{
+            background-color: red;
+            padding: 5px;
+        }
+        p.fondo{
+            content: "❤️";    
+            background-color: plum;
+        }
+        p{
+            background-color: coral;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Especificidad</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima nemo quam alias eius natus impedit ad nam unde fuga! Eos consequatur unde beatae voluptates aspernatur deleniti iste commodi in nostrum!</p>
+    <ul>
+        <li><span>10.000</span> !Important</li>
+        <li><span>1.000</span> Estilos en linea</li>
+        <li><span>100</span> #ID</li>
+        <li><span>10</span> Clases, Atributos y Pseudoclases</li>
+        <li><span>1</span> Elementos y Pseudoelementos</li>
+        <li><span>0</span> Selector Universal</li>
+    </ul>
+
+    <p class="fondo">#azul h1::first-letter</p>
+    <pre>
+        100 #azul
+      +   1 h1
+          1 ::first-letter
+  <span> 102</span>    
+    </pre>
+
+    <p>p .sidemenu div:hover</p>
+    <pre>
+          1 p
+      +  10 .sidemenu
+          1 :hover
+  <span>  22</span>    
+    </pre>
 </body>
 </html>
