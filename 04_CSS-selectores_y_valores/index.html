@@ -6,70 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
-            background-color: plum;
-        }
         p{
-            background-color: bisque;
-            color: tomato;
-        }
-        .clase_azul{
-            background-color: black;
-            color: white;            
-        }
-        #selector_id {
-            background-color: lime;
-            text-align: center;
-            border-radius: 10px;
+            background-color: red;
+            color: springgreen;
         }
 
-        a[href="#"]{
-            color: blueviolet;
-            background-color: springgreen;
+        section div p{
+            background-color: plum;
+            color: slategray;
         }
 
-        a[href="http://www.ogame.com.es"]{
-            text-decoration: none;
-            color: blue;
+        section p{
+            background-color: aquamarine;
+            color: black;
         }
-
-        p[title="Parrafo"] {
-            background-color: blueviolet;
-            color: burlywood;
-        }
-
     </style>
 </head>
 <body>
-    <h1>Selectores Basicos</h1>
+    <h4>Selectores combinadore</h4>
+    <p>Descendientes -- section p a --</p>
+    <p>Hijo Directo -- div > p --</p>
+    <p>Elemento Adyacente -- div + p --</p>
+    <p>General de Hermanos -- div ~ p --</p>
     <section>
-    <h3 id="selector_id">De tipo</h3>
-    <p> div {...} selectores que se aplican a las etiquetas HTML se aplican a todas las etiquetas</p>
-    <h3 id="selector_id">De Clase</h3>
-    <p> .nameclass {...} selector de clase se aplica a elementos especificos es el mas utilizado ya que es muy selectivo y flexible</p>
-    <h3>De ID</h3>
-    <p title="Parrafo"> #id {...} selectores de ID no se deben utilizar ya que el ID es unico y se utiliza en JavaScript como referencia</p>
-    <h3>De Atributo</h3>
-    <p> a[href=".."] {...} Selector de atributo se aplican depende de su atributo por ejemplo de href unico asi aplica a ese solo</p>
-    <h3 class="clase_azul">Universal</h3>
-    <p> * {...} selector universal, es el que se utiliza para aplicar a todas las etiquetas de la web</p>
+        <h2>Hola mundo</h2>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, iusto hic veritatis velit officia quidem alias deserunt at dolore magnam est! Ullam esse id ab veritatis. Debitis quidem quam consectetur.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quia quod deleniti explicabo fugiat expedita inventore fugit provident at aliquid, facere laudantium molestias quaerat unde quibusdam maiores aliquam porro qui?</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ipsum repellendus ipsa nihil earum aut excepturi minima? Eligendi distinctio laborum optio eaque natus libero deserunt corporis praesentium, voluptate maiores officiis?</p>
     </section>
 
-    <section>
-        <h2>Ejemplos</h2>
-
-        <nav>
-            <ul>
-                <li><a href="#"> Blanco </a></li>
-                <li><a href="http://www.gooogle.com" target="_blank"> Google </a></li>
-                <li><a href="http://www.ogame.com.es"> Ogame </a></li>
-            </ul>
-        </nav>
-        <p title="Parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat pariatur, maxime sint nemo cupiditate aspernatur vitae atque? Blanditiis quam aperiam recusandae ab adipisci labore incidunt pariatur, amet, minima, quae quasi.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto natus magnam blanditiis quaerat esse a illo harum. Perferendis odio, quam tenetur laborum est debitis nam deserunt distinctio, nihil quidem ratione?</p>
-        <p class="clase_azul">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi numquam omnis quibusdam dolorem quo blanditiis nihil veritatis deserunt amet quia quae assumenda quidem iste enim aperiam iure, facilis nemo illum.</p>
-
-        <h3 class="clase_azul">Ejemplo de selector con clase</h3>
-    </section>
 </body>
 </html>
